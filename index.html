@@ -1,28 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Pixel Art Maker!</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Lab: Pixel Art Maker</h1>
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
-    <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
-        Grid Height:
-        <input type="number" id="inputHeight" name="height" min="1" value="1">
-        Grid Width:
-        <input type="number" id="inputWeight" name="width" min="1" value="1">
-        <input type="submit">
-    </form>
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 
-    <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
-
-    <h2>Design Canvas</h2>
-    <table id="pixelCanvas"></table>
 
     <script src="designs.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pixel Art Maker</h1>
+    </div>
+
+    <h2>Choose Grid Size</h2>
+    <div class="row">
+        <div class="col-sm-4 center"></div>
+    <div class="col-sm-4 center">
+        <form id="sizePicker">
+
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="height">Grid Height:</span>
+                </div>
+                <input type="number" class="form-control" id="gheight" name="height" min="1" value="15" aria-describedby="height">
+                <div class="col-sm-2"></div>
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="width">Grid Width:</span>
+                </div>
+                <input type="number" class="form-control" id="gwidth" name="width" min="1" value="15" aria-describedby="width">
+
+            </div> <br>
+            <input type="submit" id="submit" class="btn btn-primary">
+
+        </form>
+        <div class="colorDiv">
+            Choose a color:
+            <input type="color" id="colorPicker" value="#ff0000">
+        </div>
+
+    </div>
+</div>
+
+
+
+    <h2>Design Canvas</h2>
+    <div id="main" class="center"></div>
+
+    <table id="pixelCanvas">
+
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,40 +1,41 @@
 body {
+	text-align:center;
+    font-family: 'Raleway', sans-serif;
+    background-color: #f1f1cd;
+}
+h1{
+    font-family: 'Press Start 2P', cursive;
+}
+#gridHeight,
+#gridWidth {
+    font-family: 'Raleway', sans-serif;
+    max-width: 3em;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #000;
+}
+.center {
     text-align: center;
 }
 
-h1 {
-    font-family: Monoton;
-    font-size: 70px;
-    margin: 0.2em;
+#main {
+    height: auto;
 }
 
-h2 {
-    margin: 1em 0 0.25em;
+#main .pixel {
+    height: 15px;
 }
 
-h2:first-of-type {
-    margin-top: 0.5em;
+#main .pcol {
+    width: 15px;
+    height: 100%;
+    border:0.5px solid rgb(0, 0, 0);
+    margin-left: -1px;
+    display: inline-block;
 }
-
-table,
-tr,
-td {
-    border: 1px solid black;
-}
-
-table {
-    border-collapse: collapse;
-    margin: 0 auto;
-}
-
-tr {
-    height: 20px;
-}
-
-td {
-    width: 20px;
-}
-
-input[type=number] {
-    width: 6em;
+.backcolor {
+    background-color: #fff !important;
+    /* default background color (white) */
 }
